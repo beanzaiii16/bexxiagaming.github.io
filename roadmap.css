@@ -1,0 +1,66 @@
+.ROADMAP {
+  height: 300px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+main {
+  min-width: 400px;
+  max-width: 600px;
+  margin: auto;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.TITLE {
+  font-size: 1.30em;
+  line-height: 1.80em;
+  border-top: 4px solid;
+  border-image: linear-gradient(to right, #00e90c 0%, #06e0e7 100%);
+  border-image-slice: 1;
+  border-width: 7px;
+  margin: 0;
+  padding: 45px;
+  counter-increment: section;
+  position: relative;
+  color: #ffffff;
+}
+.TITLE:before {
+  content: counter(section);
+  position: absolute;
+  border-radius: 60%;
+  padding: 10px;
+  height: 1.35em;
+  width: 1.45em;
+  background-color: #1a1313;
+  text-align: center;
+  line-height: 1.35em;
+  color: #ffffff;
+  font-size: 1em;
+}
+.TITLE:nth-child(odd) {
+  border-right: 3px solid;
+  padding-left: 0;
+}
+.TITLE:nth-child(odd):before {
+  left: 100%;
+  margin-left: -20px;
+}
+.TITLE:nth-child(even) {
+  border-left: 3px solid;
+  padding-right: 0;
+}
+.TITLE:nth-child(even):before {
+  right: 100%;
+  margin-right: -20px;
+}
+.TITLE:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.TTILE:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}

@@ -1,0 +1,96 @@
+.topnav {
+  font-family: 'Bebas Neue', cursive;
+  overflow: hidden;
+  transition: 0.4s;
+  position: fixed;
+  width: 1280px;
+  top: 10px;
+  z-index: 99;
+}
+.topnav-left {
+  float: left;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 16px;
+  border-radius: 4px;
+}
+
+.topnav a:hover {
+  background: #49b800;
+  color: #000000;
+  transition: 0.5s ease-out;
+  letter-spacing: 2px;
+}
+
+.topnav .toplogo {
+  align-items: center;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: auto) {
+  .navbar {
+    padding: 20px 10px !important;
+  }
+  .topnav a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.discord {
+  padding: 20px;
+  font-size: 30px;
+  width: 69px;
+  height: 16px;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+.discord:hover {
+  opacity: 0.7;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram, .discord{
+  color: #FFF;
+    text-shadow: 1px 1px 0px #000,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+    -webkit-text-shadow: 1px 1px 0px #000,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+    -moz-text-shadow: 1px 1px 0px #000,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+    -o-text-shadow: 1px 1px 0px #000,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+    transition: all ease-out 0.5s;
+    -moz-transition: all ease-out 0.5s;
+    -webkit-transition: all ease-out 0.5s;
+    -o-transition: all ease-out 0.5s;
+}
