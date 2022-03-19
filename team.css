@@ -5,3 +5,30 @@
 	margin-right: auto;
 	display: block;
   }
+
+  * {
+	box-sizing: border-box;
+  }
+  
+  .column {
+	float: left;
+  	width: 25%;
+	padding: 5px;
+	margin-left: 80px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .PHOTO_ROW_1::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+
+  /* Clearfix (clear floats) */
+  .PHOTO_ROW_2::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
