@@ -6,7 +6,7 @@
 	display: block;
   }
 
-  * {
+  .column {
 	box-sizing: border-box;
   }
   
@@ -14,7 +14,8 @@
 	float: left;
   	width: 25%;
 	padding: 5px;
-	margin-left: 80px;
+	margin-left: 65px;
+	margin-right: 0px;
 	margin-bottom: 50px;
 	margin-top: 50px;
   }

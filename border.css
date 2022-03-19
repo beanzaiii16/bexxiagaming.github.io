@@ -34,7 +34,7 @@
 }
 
 .COMMON .COMMONdesc, .RARE .RAREdesc, .MYSTIQUE .MYSTIQUEdesc, .LEGENDARY .LEGENDARYdesc {
-    font-size: 18px;
+    font-size: 16px;
     float: right;
     z-index: 222;
     padding: 40px;
