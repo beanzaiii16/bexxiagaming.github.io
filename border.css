@@ -34,6 +34,7 @@
 }
 
 .COMMON .COMMONdesc, .RARE .RAREdesc, .MYSTIQUE .MYSTIQUEdesc, .LEGENDARY .LEGENDARYdesc {
+    display: block;
     font-size: 16px;
     float: right;
     z-index: 222;
@@ -51,4 +52,58 @@
     height: 70px;
     width: 180px;
     
+}
+
+
+/*FOR PHONE*/
+@media only screen and (max-width: 380px), (max-width: 820px){
+    .BORDER {
+        height: 200px;
+		width: 250px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+      }
+
+    .titlecommon, .RAREtitle, .MYSTIQUEtitle, .LEGENDARYtitle {
+        display: block;
+        float: center;
+        padding: 5px;
+        padding-left: 10px;
+        height: 70px;
+        width: 140px;
+    }
+
+    .COMMON, .RARE, .MYSTIQUE, .LEGENDARY {
+        
+        width: 320px;
+    }
+
+    .COMMON .COMMONphoto, .RARE .RAREphoto, .MYSTIQUE .MYSTIQUEphoto, .LEGENDARY .LEGENDARYphoto {
+        width: 300px;
+        height: 250px;
+    }
+
+    .COMMON .COMMONphoto img, .RARE .RAREphoto img, .MYSTIQUE .MYSTIQUEphoto img, .LEGENDARY .LEGENDARYphoto img {
+
+        top: 0;
+        left: 0;
+        width: 280px;
+        height: 200px;
+    }
+
+    .COMMON .COMMONdesc, .RARE .RAREdesc, .MYSTIQUE .MYSTIQUEdesc, .LEGENDARY .LEGENDARYdesc {
+        margin-left: -60px;
+    font-size: 10px;
+    float: right;
+    z-index: 222;
+    padding: 40px;
+    max-width: 330px;
+    transform: translate(30px, -30px);
+    color: rgb(255, 255, 255);
+    font-family: 'IBM Plex Mono', monospace;
+    }
+    span {
+        display: block;
+    }
 }
