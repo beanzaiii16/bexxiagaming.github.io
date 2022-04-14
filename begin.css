@@ -1,0 +1,95 @@
+.vidfront {
+    height: 50%;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.box {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 16px;
+    border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box a:hover {
+    background: #49b800;
+    color: #000000;
+    transition: 0.5s ease-out;
+    letter-spacing: 2px;
+  }
+
+  .faa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .faa:hover {
+    opacity: 0.7;
+  }
+  
+  .fafa-enter{
+    color: #FFF;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: #49b800;
+    text-align: center;
+    border: 3px solid rgb(72, 255, 0);
+    border-style: dotted;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+      text-shadow: 1px 1px 0px #000,
+              1px -1px 0px #000,
+              -1px 1px 0px #000,
+              -1px -1px 0px #000;
+      -webkit-text-shadow: 1px 1px 0px #000,
+              1px -1px 0px #000,
+              -1px 1px 0px #000,
+              -1px -1px 0px #000;
+      -moz-text-shadow: 1px 1px 0px #000,
+              1px -1px 0px #000,
+              -1px 1px 0px #000,
+              -1px -1px 0px #000;
+      -o-text-shadow: 1px 1px 0px #000,
+              1px -1px 0px #000,
+              -1px 1px 0px #000,
+              -1px -1px 0px #000;
+      transition: all ease-out 0.5s;
+      -moz-transition: all ease-out 0.5s;
+      -webkit-transition: all ease-out 0.5s;
+      -o-transition: all ease-out 0.5s;
+  }
+  
+
+body {
+    background-color: black;
+    position: relative;
+    background-image: url(PHOTO/hecker.gif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hr1 {
+    border: 0;
+    height: 5px;
+    background-image: linear-gradient(to right, transparent, #39FF14, transparent); 
+    margin-top: 30px;
+  }
+

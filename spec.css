@@ -1,9 +1,10 @@
 .SPEC {
-    height: 300px;
-	width: 350px;
+    height: 260px;
+	width: 400px;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+	margin-bottom: -50px;
   }
 
 .SPECcontain {

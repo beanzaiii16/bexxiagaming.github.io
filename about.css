@@ -1,9 +1,10 @@
 .ABOUT {
-    height: 300px;
-	width: 350px;
+    height: 280px;
+	width: 400px;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+	margin-bottom: -50px;
   }
 
 .ABOUTcontain {

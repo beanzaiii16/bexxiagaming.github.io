@@ -1,9 +1,12 @@
 body {
     background-color: rgb(0, 0, 0);
     font-family: 'IBM Plex Mono', monospace;
-
-  }
-
+    background-image: url(PHOTO/BG\ BG.gif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .hr1 {
     border: 0;
     height: 2px;
