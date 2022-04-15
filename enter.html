@@ -26,9 +26,9 @@
   <!-- Navbar -->
   <div class="topnav">
     <img src="PHOTO/BG.png" class="toplogo1" height="45px" width="65px">
-    <div>
+    <div class="nav">
       <a href="#home">HOME</a>
-      <a href="esport.html">E-SPORT</a>
+      <a href="esport.html">ESPORTS</a>
       <a href="#about">ABOUT</a>
       <a href="#spec">SPEC</a>
       <a href="#border">NFT</a>
@@ -37,14 +37,32 @@
     </div>
     <div class="topnav-left">
       <img src="PHOTO/BG.png" class="toplogo2" height="45px" width="65px">
-      <a class="discord" href="https://discord.gg/TQk29ewm7k"><ion-icon name="logo-discord"></ion-icon></a>
+      <a class="discord" href="https://discord.gg/TQk29ewm7k">
+        <ion-icon name="logo-discord"></ion-icon>
+      </a>
       <a href="https://www.facebook.com/bexxiagaming" class="fa fa-facebook"></a>
       <a href="https://twitter.com/BexxiaNft?s=20&t=AqEprtNZ3zUoP_e-nMyLgQ" class="fa fa-twitter"></a>
       <a href="https://instagram.com/ladybexxia?utm_medium=copy_link" class="fa fa-instagram"></a>
     </div>
   </div>
 
-
+  <!--NAVBAR MOBILE-->
+  <div class="mob">
+    <nav role="navigation">
+      <ul>
+        <li><a href="#">One</a></li>
+        <li><a href="#">Two</a>
+          <ul class="dropdown">
+            <li><a href="#">Sub-1</a></li>
+            <li><a href="#">Sub-2</a></li>
+            <li><a href="#">Sub-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Three</a></li>
+      </ul>
+    </nav>
+</div>
+  
   <!--Head Video-->
   <section id="home">
     <img src="PHOTO/HEAD.gif" class="topgif">
@@ -136,27 +154,63 @@
   <!--TEAM-->
   <section id="team">
     <img src="PHOTO/TEAM.png" class="TEAM">
-    <div class="PHOTO_ROW_1">
-      <div class="column">
-        <img src="PHOTO/E.png" style="width:100%">
+    <div class="photorow">
+      <div class="PHOTO_ROW_1">
+        <div class="column">
+          <img src="PHOTO/EYIEN.gif" style="width:100%">
+          <p class="pangkat1">- - LADY BEXXIA - - </p>
+          <p class="pangkat2">RANK : FOUNDER</p>
+        </div>
+        <div class="column">
+          <img src="PHOTO/ERIK.gif" style="width:100%">
+          <p class="pangkat1">- - EREEQNAX - - </p>
+          <p class="pangkat2">RANK : CO-FOUNDER</p>
+        </div>
+        <div class="column">
+          <img src="PHOTO/KHAI.gif" style="width:100%">
+          <p class="pangkat1">- - KHAI - - </p>
+          <p class="pangkat2">RANK : NFT PROJECT MANAGER</p>
+        </div>
       </div>
-      <div class="column">
-        <img src="PHOTO/ERIK.png" style="width:100%">
-      </div>
-      <div class="column">
-        <img src="PHOTO/KHAI.png" style="width:100%">
-      </div>
-    </div>
 
-    <div class="PHOTO_ROW_2">
-      <div class="column">
-        <img src="PHOTO/QAMARUL.png" style="width:100%">
+      <hr class="hr2">
+
+      <div class="PHOTO_ROW_2">
+        <div class="column">
+          <img src="PHOTO/DAUS.gif" style="width:100%">
+          <p class="pangkat1">- - MOONLISTA - - </p>
+          <p class="pangkat2">RANK : NFT PROJECT ASSISTANT MANAGER</p>
+        </div>
+        <div class="column">
+          <img src="PHOTO/IQBAL.gif" style="width:100%">
+          <p class="pangkat1">- - BalTahir - - </p>
+          <p class="pangkat2">RANK : NFT BRAND & MARKETING</p>
+        </div>
+        <div class="column">
+          <img src="PHOTO/J.gif" style="width:100%">
+          <p class="pangkat1">- - BEANZAiii - - </p>
+          <p class="pangkat2">RANK : NFT ARTIST & DEVELOPER</p>
+        </div>
       </div>
-      <div class="column">
-        <img src="PHOTO/IMRAN.png" style="width:100%">
-      </div>
-      <div class="column">
-        <img src="PHOTO/J.png" style="width:100%">
+
+      <hr class="hr2">
+
+      <div class="PHOTO_ROW_3">
+        <div class="column">
+          <img src="PHOTO/QAMARUL.gif" style="width:100%">
+          <p class="pangkat1">- - QASHROFF - - </p>
+          <p class="pangkat2">RANK : NFT CREATIVE STRATEGIST</p>
+        </div>
+        <div class="column">
+          <img src="PHOTO/IRFAN.gif" style="width:100%">
+          <p class="pangkat1">- - IPANKOBIC - - </p>
+          <p class="pangkat2">RANK : NFT CREATIVE STRATEGIST</p>
+        </div>
+        <div class="column">
+          <img src="PHOTO/IMRAN.gif" style="width:100%">
+          <p class="pangkat1">- - IM - - </p>
+          <p class="pangkat2">RANK : CONTENT CREATOR</p>
+        </div>
       </div>
     </div>
   </section>
@@ -182,8 +236,6 @@
         delay: 400
       });
 
-      ScrollReveal().reveal('.ESPORT');
-      ScrollReveal().reveal('.ESPORTcontain', { delay: 500 });
       ScrollReveal().reveal('.ABOUT');
       ScrollReveal().reveal('.ABOUTcontain', { delay: 500 });
       ScrollReveal().reveal('.SPEC');
@@ -201,11 +253,8 @@
       ScrollReveal().reveal('.LEGENDARYtitle', { delay: 500 });
       ScrollReveal().reveal('.LEGENDARYphoto', { delay: 500 });
       ScrollReveal().reveal('.LEGENDARYdesc', { delay: 500 });
-      ScrollReveal().reveal('.ROADMAP');
       ScrollReveal().reveal('.TITLE', { delay: 500 });
       ScrollReveal().reveal('.TEAM');
-      ScrollReveal().reveal('.PHOTO_ROW_1', { delay: 500 });
-      ScrollReveal().reveal('.PHOTO_ROW_2', { delay: 500 });
     </script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
