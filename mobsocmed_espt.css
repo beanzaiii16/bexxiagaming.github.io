@@ -42,9 +42,10 @@ footer {
     
     .footer-content h3{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: bold;
         letter-spacing: 2px;
         text-shadow: 2px 2px #023524;
-        font-size: 130%;
+        font-size: 100%;
         font-weight: 500;
         text-transform: capitalize;
         line-height: 3rem;
