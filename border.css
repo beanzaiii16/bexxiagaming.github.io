@@ -74,9 +74,10 @@
         display: block;
         float: center;
         padding: 5px;
-        padding-left: 10px;
+        padding-left: 1px;
         height: 70px;
         width: 140px;
+        margin-bottom: -40px;
     }
 
     .COMMON, .RARE, .MYSTIQUE, .LEGENDARY {

@@ -42,8 +42,8 @@
 .discord {
   padding: 20px;
   font-size: 30px;
-  width: 69px;
-  height: 16px;
+  width: 80px;
+  height: 40px;
   text-align: center;
   text-decoration: none;
   
@@ -53,15 +53,15 @@
   opacity: 0.7;
 }
 
-.fa {
+.fab {
   padding: 20px;
   font-size: 30px;
-  width: 70px;
+  width: 80px;
   text-align: center;
   text-decoration: none;
 }
 
-.fa:hover {
+.fab:hover {
   opacity: 0.7;
 }
 
@@ -89,11 +89,9 @@
     -o-transition: all ease-out 0.5s;
 }
 
-.mob {
-  display: none;
+.mobilenav {
+  font-size: 0;
 }
-
-
 
 /*--------------*/ /*--------------*/ /*--------------*/ /*--------------*/
 
@@ -103,69 +101,102 @@
     display: none;
   }
 
-  a {
-    text-decoration: none;
-  }
-  
-  nav {
-    font-family: monospace;
-  }
-  
-  ul {
-    background: darkorange;
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-  }
-  
-  li {
-    color: #fff;
-    background: darkorange;
-    display: block;
+  .mobinav{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     float: left;
-    padding: 1rem;
-    position: relative;
     text-decoration: none;
-    transition-duration: 0.5s;
-  }
-    
-  li a {
-    color: #fff;
-  }
-  
-  li:hover,
-  li:focus-within {
-    background: red;
-    cursor: pointer;
-  }
-  
-  li:focus-within a {
-    outline: none;
-  }
-  
-  ul li ul {
-    background: orange;
-    visibility: hidden;
-    opacity: 0;
-    min-width: 5rem;
-    position: absolute;
-    transition: all 0.5s ease;
-    margin-top: 1rem;
+    position:fixed;
+    top: 0;
     left: 0;
-    display: none;
+    margin-left: 10px;
+    margin-top: 10px;
+    z-index: 3;
   }
   
-  ul li:hover > ul,
-  ul li:focus-within > ul,
-  ul li ul:hover,
-  ul li ul:focus {
-     visibility: visible;
-     opacity: 1;
-     display: block;
+  ul,li{
+    margin: 0;
+    padding: 0;
+  }
+  .menu{
+    z-index:1;
+  }
+
+  .menu a {
+    display: flex;
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 11px;
+    text-align: center;
+  }
+  .menu li{
+    list-style:none;
+    background: rgb(21, 51, 29);
+    color: #FFF;
+    width:100px;
+    padding: 0 5px;
+    border: 1px solid black;
+    border-radius: 2px;
+    height: 30px;
+    line-height: 30px;
+    transition: all .5s ease-in-out;
+    
   }
   
-  ul li ul li {
-    clear: both;
-    width: 100%;
+  .menu li:nth-child(odd){
+    
+    transform-origin: top;
+    transform: perspective(350px) rotateX(-90deg);
+  }
+  
+  .menu li:nth-child(even){
+     margin-top:-65px;
+    transform-origin: bottom;
+    transform: perspective(350px) rotateX(90deg);
+  }
+  
+  .menu {
+    
+    transition: all .5s ease-in-out;
+    transform-origin: 50% 0%;
+    transform: perspective(350px) rotateX(-90deg);
+  }
+  
+  .hov:hover .menu {
+    
+    transform-origin: top;
+    transform: perspective(350px) rotateX(0deg);
+  }
+  
+  .hov:hover li:nth-child(odd){
+    transform-origin: top;
+    transform: perspective(350px) rotateX(0deg);
+    margin-top:0;
+  }
+  
+  .hov:hover li:nth-child(even){
+    transform-origin: bottom;
+    transform: perspective(350px) rotateX(0deg);
+     margin-top:0;
+  }
+  
+  .menu li:first-child{
+    margin-top:0;
+  }
+  
+  .hov{
+    border-radius: 50px;
+    position:relative;
+    height: 40px;
+    width:40px;
+    background: green;
+    color: white;
+    font-size: 25px;
+    font-family: Helvetica;
+    font-weight:bold;
+    text-align: center;
+    line-height: 40px;
+    list-style:none;
+    z-index:2;
+    text-decoration: none;
   }
 }
