@@ -66,6 +66,11 @@ main {
   border-bottom-left-radius: 0;
 }
 
+.rm1, .rm2, .rm3, .rm4, .rm5, .rm6 {
+  font-weight: bolder;
+  color: #00e90c;
+}
+
 /*FOR PHONE*/
 @media only screen and (max-width: 380px) , (max-width: 820px){
 	.ROADMAP {
