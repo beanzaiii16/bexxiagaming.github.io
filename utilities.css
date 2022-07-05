@@ -181,7 +181,7 @@ html {
     border: 0;
     height: 2px;
     background-image: linear-gradient(to right, transparent, #39FF14, transparent);
-    margin-top: 1400px;
+    margin-top: 440%;
   }
 
   .UTILITIESS {
@@ -200,9 +200,9 @@ html {
   }
 
   .sub1 {
-    width: 300px;
+    width: 250px;
     color: rgb(184, 255, 152);
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .title {
