@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/png" href="PHOTO/BG.png">
   <link rel="stylesheet" href="body.css">
-  <link rel="stylesheet" href="headvideo_ex.css">
+  <link rel="stylesheet" href="headvideo.css">
   <link rel="stylesheet" href="navbar.css">
   <link rel="stylesheet" href="mobnav.scss">
   <link rel="stylesheet" href="esport.css">
@@ -24,7 +24,6 @@
   <!-- Navbar -->
   <div class="topnav">
     <div class="nav">
-      <a href="main.html#home">HOME</a>
       <a href="main.html#about">ABOUT</a>
       <a href="main.html#spec">SPEC</a>
       <a href="main.html#border">NFT</a>
@@ -44,28 +43,25 @@
 
   <!--NAVBAR MOBILE-->
   <section class="mobilenav">
-    <nav class="mobinav">
-      <li class="hov"><a><i class='fas fa-chevron-circle-down' height="45px"></i></a>
-        <ul class="menu">
-          <li><a href="enter.html#home">HOME</a></li>
-          <li><a href="enter.html#about">ABOUT</a></li>
-          <li><a href="enter.html#spec">SPEC</a></li>
-          <li><a href="enter.html#border">NFT</a></li>
-          <li><a href="roadmap.html">ROADMAP</a></li>
-          <li><a href="utilities.html">UTILITIES</a></li>
-          <li><a href="enter.html#team">TEAM</a></li>
-          <li><a href="esport.html">ESPORTS</a></li>
-        </ul>
-      </li>
-    </nav>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+    <div class="wrapper">
+      <ul>
+        <li><a href="main.html#about">ABOUT</a></li>
+        <li><a href="main.html#spec">SPEC</a></li>
+        <li><a href="main.html#border">NFT</a></li>
+        <li><a href="roadmap.html">ROADMAP</a></li>
+        <li><a href="utilities.html">UTILITIES</a></li>
+        <li><a href="main.html#team">TEAM</a></li>
+        <li><a href="esport.html">ESPORTS</a></li>
+      </ul>
+    </div>
   </section>
 
   <!--Head Video-->
   <section>
-    <img src="PHOTO/HEAD.gif" class="topgif1">
+    <img src="PHOTO/HEAD.gif" class="topgif">
   </section>
-
-  <hr class="hr11">
 
   <!--Esport-->
   <section id="esport">
