@@ -15,7 +15,7 @@
 }
 
 #ultmob {
-  height: 0;
+  display: none;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -177,11 +177,14 @@ html {
     display: none;
   }
 
+  #ultmob {
+    display: contents;
+  }
+
   .hr33 {
     border: 0;
     height: 2px;
     background-image: linear-gradient(to right, transparent, #39FF14, transparent);
-    margin-top: 440%;
   }
 
   .UTILITIESS {
